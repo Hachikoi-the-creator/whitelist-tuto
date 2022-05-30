@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import home from "../styles/Home.module.css";
 import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
@@ -208,8 +209,13 @@ export default function Home() {
           </div>
           {renderButton()}
         </div>
-        <div>
-          <img className={home.image} src="./crypto-devs.svg" />
+        <div className={home.relPosition}>
+          <Image
+            src="/crypto-devs.svg"
+            alt="A cool svg of a programmer"
+            width={600}
+            height={500}
+          />
         </div>
       </main>
 
