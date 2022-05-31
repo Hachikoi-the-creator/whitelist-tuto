@@ -7,14 +7,6 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.footer {
-  display: flex;
-  padding: 20px 0;
-  border-top: 1px solid #ffefef;
-  justify-content: center;
-  align-items: center;
-}
-
 .image {
   width: 70%;
   height: 50%;
@@ -46,6 +38,28 @@
 
 .button:hover {
   background-color: rgb(2, 2, 182);
+}
+
+.footer {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #ffefef;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: none;
+}
+
+.footer span::after {
+  width: 10ch;
+  content: "Me!";
+}
+.footer span:hover::after {
+  background-color: rgba(216, 112, 147, 0.528);
+  border-radius: 7px;
+  content: "Hachikoi!";
 }
 
 .extraPadding {
