@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(30 41 59);
+  color: white;
+}
+
+/* className="min-h-[100vh] bg-slate-800 text-white" */
