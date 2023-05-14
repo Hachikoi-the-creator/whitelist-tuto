@@ -27,7 +27,7 @@ export default function WhitelistSelf() {
 
   useEffect(() => {
     checkIfWhitelisted().then((isInAlready) => setIsWithelisted(isInAlready));
-  });
+  },[]);
 
   return (
     <div>

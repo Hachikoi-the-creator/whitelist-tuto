@@ -1,10 +1,11 @@
 import WhitelistSelf from "@/components/WhitelistSelf";
-import { Inter, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Image from "next/image";
 import devSvg from "@/assets/cdev.svg";
 import { useAccount } from "wagmi";
 import SpotsCounter from "@/components/SpotsCounter";
 import Header from "@/components/Header";
+import { Web3Button } from "@web3modal/react";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col gap-3">
           <h1>Welcome to crypto Devs</h1>
           <h2>NFT collection for the best crypto devs</h2>
-          {isConnected && <WhitelistSelf />}
+          {isConnected ? <WhitelistSelf /> : <Web3Button />}
 
           {isConnected && <SpotsCounter />}
         </div>
